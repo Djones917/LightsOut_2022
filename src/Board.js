@@ -53,7 +53,7 @@ class Board extends Component {
     for(let y=0; y < this.props.nrows; y++) {
       let row = [];
       for(x=0; x < this.props.ncols; x++) {
-        row.push(Math.random() < this.props.chanceLightStartsOn)
+        row.push(Math.random() < this.props.chanceLightStartsOn);
       }
       board.row(row);
     }
