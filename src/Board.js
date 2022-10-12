@@ -55,7 +55,7 @@ class Board extends Component {
       for(x=0; x < this.props.ncols; x++) {
         row.push(Math.random() < this.props.chanceLightStartsOn);
       }
-      board.row(row);
+      board.push(row);
     }
     return board
   }
