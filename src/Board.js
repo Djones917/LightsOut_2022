@@ -99,7 +99,18 @@ class Board extends Component {
     return (
       <table className="Board">
         <tbody>
-          <tr></tr>
+          <tr>
+            <Cell />
+            <Cell />
+            <Cell />
+            <Cell />
+          </tr>
+          <tr>
+            <Cell />
+            <Cell />
+            <Cell />
+            <Cell />
+          </tr>
         </tbody>
       </table>
     )
