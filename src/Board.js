@@ -96,22 +96,16 @@ class Board extends Component {
     // make table board
 
     // TODO
+    let tblBoard = [];
+    for(let y = 0; y < this.props.nrows; y++) {
+      let row = [];
+      for(let x = 0; x < this.props.ncols; x++) {
+        row.push(<Cell isLit={this.state.board[y][x]}/>);
+      }
+    }
     return (
       <table className="Board">
-        <tbody>
-          <tr>
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-          </tr>
-          <tr>
-            <Cell />
-            <Cell />
-            <Cell />
-            <Cell />
-          </tr>
-        </tbody>
+        <tbody>{tblBoard}</tbody>
       </table>
     )
   }
